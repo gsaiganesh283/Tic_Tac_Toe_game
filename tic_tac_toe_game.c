@@ -5,14 +5,12 @@ void board();
 int main() 
 { 
  
-printf("************************************************************************
-***********************************************************\n"); 
+printf("***********************************************************************************************************************************\n"); 
  printf("\t\t\t\t\t\t\tWELCOME\n"); 
 printf("\t\t\t\t\t\t TIC TAC TOE GAME\n"); 
 printf("\t\t\t\t\t\t\tDone by-'RA2111026010282' AND 'RA2111026010283'\n"); 
  
-printf("************************************************************************
-***********************************************************\n"); 
+printf("***********************************************************************************************************************************\n"); 
  int player = 1, i, choice; 
  char mark; 
  do 
@@ -53,7 +51,6 @@ printf("************************************************************************
  { 
  printf("Invalid move "); 
  player--; 
- getch(); 
  } 
  i = checkwin(); 
  player++; 
@@ -65,7 +62,6 @@ printf("************************************************************************
  printf("==>\aPlayer %d win ", --player); 
  else 
  printf("==>\aGame draw"); 
- getch(); 
  return 0; 
 } 
 int checkwin() 
@@ -106,14 +102,13 @@ void board()
  
  printf("\n\n\tTic Tac Toe\n\n"); 
  printf("Player 1 (X) - Player 2 (O)\n\n\n"); 
- printf(" | | \n"); 
- printf(" %c | %c | %c \n", square[1], square[2], square[3]); 
- printf("_____|_____|_____\n"); 
- printf(" | | \n"); 
- printf(" %c | %c | %c \n", square[4], square[5], square[6]); 
- printf("_____|_____|_____\n"); 
- printf(" | | \n"); 
- printf(" %c | %c | %c \n", square[7], square[8], square[9]); 
- printf(" | | \n\n"); 
- 
+ printf("    |    | \n"); 
+ printf(" %c  | %c | %c \n", square[1], square[2], square[3]); 
+ printf("____|____|_____\n"); 
+ printf("    |    | \n"); 
+ printf(" %c  | %c | %c \n", square[4], square[5], square[6]); 
+ printf("____|____|_____\n"); 
+ printf("    |    | \n"); 
+ printf(" %c  | %c | %c \n", square[7], square[8], square[9]); 
+ printf("    |    | \n\n"); 
 }
